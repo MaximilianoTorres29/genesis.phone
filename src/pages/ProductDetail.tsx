@@ -126,14 +126,14 @@ export const ProductDetail: React.FC = () => {
             {product.caracteristicas && Object.keys(product.caracteristicas).length > 0 && (
               <div>
                 <h2 className="text-xl font-semibold text-primary-900 mb-4">Características</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {Object.entries(product.caracteristicas).map(([key, value]) => {
                     if (!value) return null;
                     const label = key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1');
                     return (
-                      <div key={key} className="bg-white p-4 rounded-lg border border-gray-200">
-                        <p className="text-sm text-gray-500 font-medium mb-1">{label}</p>
-                        <p className="text-base text-gray-900 font-medium">{value}</p>
+                      <div key={key} className="bg-white px-3 py-2 rounded-lg border border-gray-200">
+                        <p className="text-xs text-gray-500 font-medium mb-0.5">{label}</p>
+                        <p className="text-sm text-gray-900 font-medium">{value}</p>
                       </div>
                     );
                   })}

@@ -63,10 +63,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       </div>
 
       {/* Contenido */}
-      <div className="p-6 flex flex-col flex-grow">
+      <div className="px-4 py-3 flex flex-col flex-grow">
         {/* Nombre y Modelo */}
-        <div className="mb-4">
-          <h3 className="text-lg font-semibold text-primary-900 mb-1.5 tracking-tight">
+        <div className="mb-2">
+          <h3 className="text-lg font-semibold text-primary-900 mb-0.5 tracking-tight">
             {product.nombre}
           </h3>
           <p className="text-sm text-gray-500 font-light">
@@ -75,7 +75,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         </div>
 
         {/* Precio */}
-        <div className="mb-5">
+        <div className="mb-2">
           <p className="text-2xl font-bold text-primary-900 tracking-tight">
             {formatPrice(product.precio)}
           </p>
@@ -83,13 +83,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         {/* Descripción (opcional) */}
         {product.descripcion && (
-          <p className="text-sm text-gray-600 mb-5 line-clamp-2 flex-grow leading-relaxed font-light">
+          <p className="text-sm text-gray-600 mb-2 line-clamp-2 flex-grow leading-relaxed font-light">
             {product.descripcion}
           </p>
         )}
 
         {/* Stock */}
-        <div className="mb-4">
+        <div className="mb-2">
           <p className={`text-sm font-medium ${
             product.stock === 0 
               ? 'text-red-600' 
@@ -108,7 +108,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Botón WhatsApp */}
         <button
           onClick={handleWhatsAppClick}
-          className="mt-auto w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+          className="mt-auto w-full bg-green-600 hover:bg-green-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
         >
           <svg
             className="w-5 h-5"
