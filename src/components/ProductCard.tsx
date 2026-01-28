@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Product } from '../types/products';
+import { getImagePath } from '../utils/imagePath';
 
 interface ProductCardProps {
   product: Product;
@@ -48,7 +49,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       {/* Imagen */}
       <div className="relative h-72 bg-gray-50 overflow-hidden">
         <img
-          src={product.imagen}
+          src={getImagePath(product.imagen)}
           alt={product.nombre}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           onError={(e) => {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { getImagePath } from '../utils/imagePath';
 
 interface ImageCarouselProps {
   images: string[];
@@ -33,7 +34,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, productNam
       {/* Imagen principal */}
       <div className="relative h-96 sm:h-[500px] lg:h-[600px] bg-gray-100 rounded-xl overflow-hidden">
         <img
-          src={images[currentIndex]}
+          src={getImagePath(images[currentIndex])}
           alt={`${productName} - Imagen ${currentIndex + 1}`}
           className="w-full h-full object-cover"
           onError={(e) => {
@@ -87,7 +88,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, productNam
               }`}
             >
               <img
-                src={image}
+                src={getImagePath(image)}
                 alt={`Miniatura ${index + 1}`}
                 className="w-full h-full object-cover"
                 onError={(e) => {
