@@ -225,6 +225,31 @@ export const products: Product[] = [
       sistemaOperativo: 'iOS 13',
     },
   },
+  {
+    id: '18',
+    nombre: 'iPhone 14 Pro',
+    modelo: '14 Pro',
+    precio: 920000,
+    estado: 'usado',
+    categoria: 'iphone',
+    imagen: '/images/iphone-14-pro-128gb-usado.png',
+    imagenes: [
+      '/images/iphone-14-pro-128gb-usado.png',
+    ],
+    stock: 1,
+    descripcion: 'iPhone 14 Pro 128GB, usado en perfecto estado. Batería al 100%, incluye hidrogel colocado, funda y cargador.',
+    caracteristicas: {
+      almacenamiento: '128GB',
+      color: 'Space Black',
+      pantalla: '6.1" Super Retina XDR',
+      camara: 'Sistema de triple cámara 48MP',
+      bateria: '100% de capacidad',
+      procesador: 'Chip A16 Bionic',
+      sistemaOperativo: 'iOS 16',
+      estado: 'Perfecto estado',
+      incluye: 'Hidrogel colocado, funda y cargador',
+    },
+  },
 
   // Accesorios Nuevos
   {

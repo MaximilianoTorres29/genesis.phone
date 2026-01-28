@@ -27,11 +27,11 @@ export const ProductDetail: React.FC = () => {
   }
 
   const formatPrice = (price: number): string => {
-    return new Intl.NumberFormat('es-AR', {
-      style: 'currency',
-      currency: 'USD',
+    const formattedNumber = new Intl.NumberFormat('es-AR', {
       minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
     }).format(price);
+    return `ARS $ ${formattedNumber}`;
   };
 
   const getStateBadgeColor = (estado: string): string => {
