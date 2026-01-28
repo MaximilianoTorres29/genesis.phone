@@ -5,7 +5,7 @@ import { ProductDetail } from './pages/ProductDetail';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/genesis.phone">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/producto/:id" element={<ProductDetail />} />
