@@ -169,6 +169,28 @@ export const products: Product[] = [
       incluye: 'Caja original',
     },
   },
+  {
+    id: '24',
+    nombre: 'iPhone 13',
+    modelo: '13',
+    precio: 550000,
+    estado: 'usado',
+    categoria: 'iphone',
+    imagen: '/images/iphone-12-128gb-85-vendido.png',
+    imagenes: [
+      '/images/iphone-12-128gb-85-vendido.png',
+    ],
+    stock: 0,
+    descripcion: 'iPhone 13 de 128 GB, usado. Vendido a $550.000. Batería al 80% de capacidad.',
+    caracteristicas: {
+      almacenamiento: '128 GB',
+      pantalla: '6.1" Super Retina XDR',
+      camara: 'Sistema de doble cámara 12 MP',
+      bateria: '80% de capacidad',
+      procesador: 'Chip A15 Bionic',
+      sistemaOperativo: 'iOS',
+    },
+  },
 
   // Accesorios
   {
