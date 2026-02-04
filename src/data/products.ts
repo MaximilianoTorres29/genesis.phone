@@ -6,14 +6,14 @@ export const products: Product[] = [
     id: '1',
     nombre: 'iPhone 13 Pro',
     modelo: '13 Pro',
-    precio: 570000,
+    precio: 575000,
     estado: 'usado',
     categoria: 'iphone',
     imagen: '/images/13pro.blue.jpeg',
     imagenes: [
       '/images/13pro.blue.jpeg',
     ],
-    stock: 5,
+    stock: 1,
     descripcion: 'iPhone 13 Pro 128 GB con pantalla Super Retina XDR OLED de 6.1" y ProMotion (120 Hz), chip A15 Bionic, 6 GB de RAM y triple cámara de 12 MP con modo Cine y ProRes. Batería al 77% de capacidad, carga MagSafe y resistencia IP68.',
     caracteristicas: {
       almacenamiento: '128 GB',
@@ -39,7 +39,7 @@ export const products: Product[] = [
     imagenes: [
       '/images/iphone-14-pro-128gb-usado.png',
     ],
-    stock: 1,
+    stock: 0,
     descripcion: 'iPhone 14 Pro 128GB, usado en perfecto estado. Batería al 100%, incluye hidrogel colocado, funda y cargador.',
     caracteristicas: {
       almacenamiento: '128GB',
@@ -64,7 +64,7 @@ export const products: Product[] = [
     imagenes: [
       '/images/iphone-xs-max-64gb.png',
     ],
-    stock: 1,
+    stock: 0,
     descripcion: 'iPhone XS Max de 64 GB con pantalla OLED Super Retina HD de 6.5 pulgadas, chip A12 Bionic con 4 GB de RAM. Sistema de cámara dual de 12 MP, Face ID, carga rápida/inalámbrica y resistencia IP68. Diseño premium de vidrio y acero inoxidable. Batería con más del 80% de capacidad. Incluye cargador.',
     caracteristicas: {
       almacenamiento: '64 GB',
@@ -80,6 +80,95 @@ export const products: Product[] = [
       incluye: 'Cargador',
     },
   },
+  {
+    id: '20',
+    nombre: 'iPhone 13',
+    modelo: '13',
+    precio: 565000,
+    estado: 'usado',
+    categoria: 'iphone',
+    imagen: '/images/iphone-13-128gb-vendido.png',
+    imagenes: [
+      '/images/iphone-13-128gb-vendido.png',
+    ],
+    stock: 0,
+    descripcion: 'iPhone 13 de 128 GB, usado. Batería al 83% de capacidad. Vendido.',
+    caracteristicas: {
+      almacenamiento: '128 GB',
+      pantalla: '6.1" Super Retina XDR',
+      camara: 'Sistema de doble cámara 12 MP',
+      bateria: '83% de capacidad',
+      procesador: 'Chip A15 Bionic',
+      sistemaOperativo: 'iOS 15',
+    },
+  },
+  {
+    id: '21',
+    nombre: 'iPhone 13 Pro',
+    modelo: '13 Pro',
+    precio: 774800,
+    estado: 'usado',
+    categoria: 'iphone',
+    imagen: '/images/iphone-13-pro-128gb-100-vendido.png',
+    imagenes: [
+      '/images/iphone-13-pro-128gb-100-vendido.png',
+    ],
+    stock: 0,
+    descripcion: 'iPhone 13 Pro de 128 GB, usado. Batería al 100% de capacidad. Incluía cargador. Vendido.',
+    caracteristicas: {
+      almacenamiento: '128 GB',
+      pantalla: '6.1" Super Retina XDR OLED, ProMotion 120 Hz',
+      camara: 'Sistema de triple cámara 12 MP',
+      bateria: '100% de capacidad',
+      procesador: 'Chip A15 Bionic',
+      sistemaOperativo: 'iOS 15',
+    },
+  },
+  {
+    id: '22',
+    nombre: 'iPhone 13 Pro',
+    modelo: '13 Pro',
+    precio: 765000,
+    estado: 'usado',
+    categoria: 'iphone',
+    imagen: '/images/iphone-13-pro-128gb-98-vendido.png',
+    imagenes: [
+      '/images/iphone-13-pro-128gb-98-vendido.png',
+    ],
+    stock: 0,
+    descripcion: 'iPhone 13 Pro de 128 GB, usado. Batería al 98% de capacidad. Vendido.',
+    caracteristicas: {
+      almacenamiento: '128 GB',
+      pantalla: '6.1" Super Retina XDR OLED, ProMotion 120 Hz',
+      camara: 'Sistema de triple cámara 12 MP',
+      bateria: '98% de capacidad',
+      procesador: 'Chip A15 Bionic',
+      sistemaOperativo: 'iOS 15',
+    },
+  },
+  {
+    id: '23',
+    nombre: 'iPhone 14',
+    modelo: '14',
+    precio: 590000,
+    estado: 'usado',
+    categoria: 'iphone',
+    imagen: '/images/iphone-14-128gb-88-vendido.png',
+    imagenes: [
+      '/images/iphone-14-128gb-88-vendido.png',
+    ],
+    stock: 0,
+    descripcion: 'iPhone 14 de 128 GB, usado. Con caja original. Batería al 88% de capacidad. Vendido en oferta.',
+    caracteristicas: {
+      almacenamiento: '128 GB',
+      pantalla: '6.1" Super Retina XDR',
+      camara: 'Sistema de doble cámara 12 MP',
+      bateria: '88% de capacidad',
+      procesador: 'Chip A15 Bionic',
+      sistemaOperativo: 'iOS 16',
+      incluye: 'Caja original',
+    },
+  },
 
   // Accesorios
   {
@@ -93,7 +182,7 @@ export const products: Product[] = [
     imagenes: [
       '/images/tv-box-8k-android.png',
     ],
-    stock: 1,
+    stock: 10,
     descripcion: 'TV Box Ultra HD 8K con Android 13. Resolución 8K/4K/2K. Procesador Rockchip. Wi-Fi 2.4G+5G, USB 3.0. Compatible con YouTube, Netflix, Google Play, Disney+ y Prime Video.',
     caracteristicas: {
       tipo: 'TV Box',
@@ -109,7 +198,7 @@ export const products: Product[] = [
   {
     id: '10',
     nombre: 'Cargador Apple USB-C 20W + Cable',
-    modelo: '20W Power Adapter + Charge Cable 1m',
+    modelo: '20W Power Adapter + Cable USB-C a Lightning 1m',
     precio: 35000,
     estado: 'nuevo',
     categoria: 'accesorio',
@@ -117,13 +206,13 @@ export const products: Product[] = [
     imagenes: [
       '/images/cargador-apple-usbc-20w.png',
     ],
-    stock: 1,
+    stock: 50,
     descripcion: 'Adaptador de corriente USB-C de 20W y cable de carga USB-C (1m) originales de Apple. Nuevos, sellados. Compatible con iPhone y dispositivos Apple con puerto USB-C.',
     caracteristicas: {
       tipo: 'Cargador + Cable',
       potencia: '20W',
-      cable: 'USB-C a USB-C, 1 metro',
-      compatibilidad: 'iPhone y dispositivos Apple con USB-C',
+      cable: 'USB-C a Lightning, 1 metro',
+      compatibilidad: 'iPhone, Watch, iPad y dispositivos Apple',
       estado: 'Nuevo, sellado',
     },
   },
@@ -167,6 +256,27 @@ export const products: Product[] = [
       grosor: '0.33mm 2.5D',
       compatibilidad: 'iPhone 12, 12 Pro, 13, 13 Pro',
       detalles: 'Resistente a rayaduras, cristalino, sensible al tacto',
+    },
+  },
+  {
+    id: '13',
+    nombre: 'Cargador Apple USB-C 20W + Cable 1m (tipo C)',
+    modelo: '20W Power Adapter + USB-C Charge Cable 1m',
+    precio: 40000,
+    estado: 'nuevo',
+    categoria: 'accesorio',
+    imagen: '/images/cargador-apple-usbc-20w-cable-1m.png',
+    imagenes: [
+      '/images/cargador-apple-usbc-20w-cable-1m.png',
+    ],
+    stock: 6,
+    descripcion: 'Adaptador de corriente USB-C 20W y cable de carga USB-C (1m) originales de Apple. Nuevos, sellados. Compatible con iPhone y dispositivos Apple con puerto USB-C.',
+    caracteristicas: {
+      tipo: 'Cargador + Cable USB-C',
+      potencia: '20W',
+      cable: 'USB-C, 1 metro',
+      compatibilidad: 'iPhone y dispositivos Apple con USB-C',
+      estado: 'Nuevo, sellado',
     },
   },
 ];

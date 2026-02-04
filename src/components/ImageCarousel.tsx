@@ -36,7 +36,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, productNam
         <img
           src={getImagePath(images[currentIndex])}
           alt={`${productName} - Imagen ${currentIndex + 1}`}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
           onError={(e) => {
             (e.target as HTMLImageElement).src = 'https://via.placeholder.com/800x600?text=iPhone';
           }}
@@ -90,7 +90,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, productNam
               <img
                 src={getImagePath(image)}
                 alt={`Miniatura ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = 'https://via.placeholder.com/200x200?text=iPhone';
                 }}

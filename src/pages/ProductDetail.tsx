@@ -91,7 +91,7 @@ export const ProductDetail: React.FC = () => {
                 {product.estado === 'nuevo' ? '✨ Nuevo' : '🔄 Usado'}
               </span>
               <span className={`px-4 py-2 rounded-lg text-sm font-medium border ${getStockBadgeColor(product.stock)}`}>
-                {product.stock === 0 ? '❌ Sin stock' : product.stock < 5 ? `⚠️ Últimas ${product.stock} unidades` : `✅ Stock: ${product.stock}`}
+                {product.stock === 0 ? '❌ Sin stock' : product.stock < 5 ? `⚠️ Últimas ${product.stock} unidades` : `✅ Stock: ${product.stock} unidades`}
               </span>
             </div>
 
