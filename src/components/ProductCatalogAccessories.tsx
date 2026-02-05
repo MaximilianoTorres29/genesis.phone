@@ -8,7 +8,7 @@ interface ProductCatalogAccessoriesProps {
 }
 
 export const ProductCatalogAccessories: React.FC<ProductCatalogAccessoriesProps> = ({ 
-  whatsAppNumber = '1234567890' 
+  whatsAppNumber = '542995313662' 
 }) => {
   const [filter, setFilter] = useState<'todos' | 'nuevo' | 'usado'>('todos');
   

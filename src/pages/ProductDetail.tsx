@@ -6,7 +6,7 @@ import { ImageCarousel } from '../components/ImageCarousel';
 export const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const whatsAppNumber = '1234567890'; // Reemplaza con tu número real
+  const whatsAppNumber = '542995313662';
 
   const product = id ? getProductById(id) : null;
 
@@ -49,7 +49,7 @@ export const ProductDetail: React.FC = () => {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      `Hola, estoy interesado en el ${product.nombre} ${product.modelo}`
+      `Hola Genesis iPhone estoy interesado en el ${product.nombre} ${product.modelo}`
     );
     const whatsAppUrl = `https://wa.me/${whatsAppNumber}?text=${message}`;
     window.open(whatsAppUrl, '_blank');

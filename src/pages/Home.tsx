@@ -12,7 +12,7 @@ export const Home: React.FC = () => {
     console.log('WhatsApp button clicked');
   };
 
-  const whatsAppNumber = '1234567890'; // Reemplaza con tu número real
+  const whatsAppNumber = '542995313662';
 
   return (
     <div className="min-h-screen">

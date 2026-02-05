@@ -5,8 +5,8 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onWhatsAppClick }) => {
-  const whatsAppNumber = '1234567890'; // Reemplaza con tu número real
-  const whatsAppMessage = encodeURIComponent('Hola, estoy interesado en sus productos de iPhone');
+  const whatsAppNumber = '542995313662';
+  const whatsAppMessage = encodeURIComponent('Hola Genesis iPhone estoy interesado en sus productos.');
   const whatsAppUrl = `https://wa.me/${whatsAppNumber}?text=${whatsAppMessage}`;
 
   const handleWhatsAppClick = () => {

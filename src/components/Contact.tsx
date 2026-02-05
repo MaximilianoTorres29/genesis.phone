@@ -6,10 +6,10 @@ interface ContactProps {
 }
 
 export const Contact: React.FC<ContactProps> = ({ 
-  whatsAppNumber = '1234567890',
+  whatsAppNumber = '542995313662',
   instagramUrl = 'https://instagram.com/genesis.iphone'
 }) => {
-  const whatsAppMessage = encodeURIComponent('Hola, estoy interesado en sus productos de iPhone');
+  const whatsAppMessage = encodeURIComponent('Hola Genesis iPhone estoy interesado en sus productos.');
   const whatsAppLink = `https://wa.me/${whatsAppNumber}?text=${whatsAppMessage}`;
 
   return (

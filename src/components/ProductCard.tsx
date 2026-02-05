@@ -10,7 +10,7 @@ interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = ({ 
   product, 
-  whatsAppNumber = '1234567890' 
+  whatsAppNumber = '542995313662' 
 }) => {
   const navigate = useNavigate();
 
@@ -38,7 +38,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const handleWhatsAppClick = (e: React.MouseEvent) => {
     e.stopPropagation(); // Evitar que se active el click del card
     const message = encodeURIComponent(
-      `Hola, estoy interesado en el ${product.nombre} ${product.modelo}`
+      `Hola Genesis iPhone estoy interesado en el ${product.nombre} ${product.modelo}`
     );
     const whatsAppUrl = `https://wa.me/${whatsAppNumber}?text=${message}`;
     window.open(whatsAppUrl, '_blank');
