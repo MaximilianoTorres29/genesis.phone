@@ -29,6 +29,30 @@ export const products: Product[] = [
 
   // iPhones Usados
   {
+    id: '25',
+    nombre: 'iPhone 12',
+    modelo: '12',
+    precio: 390000,
+    estado: 'usado',
+    categoria: 'iphone',
+    imagen: '/images/iphone-12-128gb-azul-oscuro-77-1.png',
+    imagenes: [
+      '/images/iphone-12-128gb-azul-oscuro-77-1.png',
+      '/images/iphone-12-128gb-azul-oscuro-77-2.png',
+    ],
+    stock: 1,
+    descripcion: 'iPhone 12 de 128 GB en azul oscuro, usado. Batería al 77% de capacidad. Incluye cargador.',
+    caracteristicas: {
+      almacenamiento: '128 GB',
+      color: 'Azul oscuro',
+      pantalla: '6.1" Super Retina XDR',
+      camara: 'Sistema de doble cámara 12 MP',
+      bateria: '77% de capacidad',
+      procesador: 'Chip A14 Bionic',
+      incluye: 'Cargador',
+    },
+  },
+  {
     id: '18',
     nombre: 'iPhone 14 Pro',
     modelo: '14 Pro',
@@ -197,7 +221,7 @@ export const products: Product[] = [
     id: '9',
     nombre: 'TV Box Ultra HD 8K',
     modelo: '8K4K2K Android 13',
-    precio: 50000,
+    precio: 55000,
     estado: 'nuevo',
     categoria: 'accesorio',
     imagen: '/images/tv-box-8k-android.png',
@@ -270,7 +294,7 @@ export const products: Product[] = [
     imagenes: [
       '/images/vidrio-templado-iphone-12-13.png',
     ],
-    stock: 1,
+    stock: 8,
     descripcion: 'Vidrio templado premium 9H, 0.33mm 2.5D. Resistente a rayaduras, cristalino, sensible al tacto. Compatible con iPhone 12, 12 Pro, 13 y 13 Pro.',
     caracteristicas: {
       tipo: 'Vidrio templado',
