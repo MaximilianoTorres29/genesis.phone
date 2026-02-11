@@ -15,11 +15,12 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
   // Obtener solo los iPhones (celulares)
   const allProducts = getProductsByCategory('iphone');
   
-  // Filtrar productos según el estado seleccionado
-  const filteredProducts: Product[] = 
+  // Filtrar productos según el estado seleccionado y ordenar: disponibles primero (stock > 0)
+  const filteredProducts: Product[] = (
     filter === 'todos' 
-      ? allProducts 
-      : allProducts.filter(product => product.estado === filter);
+      ? [...allProducts] 
+      : allProducts.filter(product => product.estado === filter)
+  ).sort((a, b) => Number(a.stock === 0) - Number(b.stock === 0));
 
   return (
     <section className="py-20 bg-gray-50">

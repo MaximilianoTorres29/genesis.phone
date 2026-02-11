@@ -81,14 +81,14 @@ export const products: Product[] = [
     id: '19',
     nombre: 'iPhone XS Max',
     modelo: 'XS Max',
-    precio: 330000,
+    precio: 300000,
     estado: 'usado',
     categoria: 'iphone',
     imagen: '/images/iphone-xs-max-64gb.png',
     imagenes: [
       '/images/iphone-xs-max-64gb.png',
     ],
-    stock: 0,
+    stock: 1,
     descripcion: 'iPhone XS Max de 64 GB con pantalla OLED Super Retina HD de 6.5 pulgadas, chip A12 Bionic con 4 GB de RAM. Sistema de cámara dual de 12 MP, Face ID, carga rápida/inalámbrica y resistencia IP68. Diseño premium de vidrio y acero inoxidable. Batería con más del 80% de capacidad. Incluye cargador.',
     caracteristicas: {
       almacenamiento: '64 GB',

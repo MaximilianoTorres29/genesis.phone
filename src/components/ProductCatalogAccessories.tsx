@@ -9,9 +9,9 @@ interface ProductCatalogAccessoriesProps {
 export const ProductCatalogAccessories: React.FC<ProductCatalogAccessoriesProps> = ({ 
   whatsAppNumber = '542995313662' 
 }) => {
-  // Obtener solo los accesorios (todos)
+  // Obtener accesorios y ordenar: disponibles primero (stock > 0)
   const allProducts = getProductsByCategory('accesorio');
-  const filteredProducts = allProducts;
+  const filteredProducts = [...allProducts].sort((a, b) => Number(a.stock === 0) - Number(b.stock === 0));
 
   return (
     <section className="py-20 bg-white">

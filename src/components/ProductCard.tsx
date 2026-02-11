@@ -32,6 +32,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
   const handleCardClick = () => {
     if (isVendido) return;
+    try {
+      sessionStorage.setItem('genesis.homeScrollPosition', String(window.scrollY));
+    } catch (_) {}
     navigate(`/producto/${product.id}`);
   };
 

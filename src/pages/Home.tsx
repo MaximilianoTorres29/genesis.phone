@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Hero } from '../components/Hero';
 import { ProductCatalog } from '../components/ProductCatalog';
 import { ProductCatalogAccessories } from '../components/ProductCatalogAccessories';
@@ -7,7 +7,21 @@ import { AboutFounder } from '../components/AboutFounder';
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 
+const SCROLL_KEY = 'genesis.homeScrollPosition';
+
 export const Home: React.FC = () => {
+  useEffect(() => {
+    const saved = sessionStorage.getItem(SCROLL_KEY);
+    if (saved !== null) {
+      sessionStorage.removeItem(SCROLL_KEY);
+      const y = parseInt(saved, 10);
+      if (!Number.isNaN(y)) {
+        const id = setTimeout(() => window.scrollTo(0, y), 0);
+        return () => clearTimeout(id);
+      }
+    }
+  }, []);
+
   const handleWhatsAppClick = () => {
     // Aquí puedes agregar tracking o analytics si lo necesitas
     console.log('WhatsApp button clicked');
