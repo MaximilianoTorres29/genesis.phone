@@ -1,7 +1,6 @@
 import React from 'react';
 import { ProductCard } from './ProductCard';
 import { getProductsByCategory } from '../data/products';
-import { Product } from '../types/products';
 
 interface ProductCatalogAccessoriesProps {
   whatsAppNumber?: string;
