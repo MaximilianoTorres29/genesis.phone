@@ -3,6 +3,7 @@ import { Hero } from '../components/Hero';
 import { ProductCatalog } from '../components/ProductCatalog';
 import { ProductCatalogAccessories } from '../components/ProductCatalogAccessories';
 import { Benefits } from '../components/Benefits';
+import { AboutFounder } from '../components/AboutFounder';
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 
@@ -26,6 +27,9 @@ export const Home: React.FC = () => {
       
       {/* Sección de Beneficios */}
       <Benefits />
+
+      {/* Quién soy */}
+      <AboutFounder />
 
       {/* Sección de Contacto */}
       <Contact whatsAppNumber={whatsAppNumber} />

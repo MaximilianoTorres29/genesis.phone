@@ -7,7 +7,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({
   whatsAppNumber = '542995313662',
-  instagramUrl = 'https://instagram.com/genesis.iphone'
+  instagramUrl = 'https://www.instagram.com/maxi.torres_85/'
 }) => {
   const whatsAppMessage = encodeURIComponent('Hola Genesis iPhone estoy interesado en sus productos.');
   const whatsAppLink = `https://wa.me/${whatsAppNumber}?text=${whatsAppMessage}`;
@@ -16,12 +16,23 @@ export const Footer: React.FC<FooterProps> = ({
   return (
     <footer className="bg-primary-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="flex flex-col items-center justify-center gap-8 text-center">
           {/* Nombre de la marca */}
-          <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold mb-2 tracking-tight">
+          <div>
+            <h3 className="text-2xl font-bold mb-2 tracking-tight flex flex-wrap items-center justify-center gap-0.5">
               <span className="text-white">Genesis.</span>
-              <span className="text-accent-400">Iphone</span>
+              <span className="text-accent-400 inline-flex items-center">
+                Iph
+                <svg
+                  className="w-[0.85em] h-[0.85em] -mx-0.5 text-white inline-block align-middle"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                </svg>
+                ne
+              </span>
             </h3>
             <p className="text-gray-400 text-sm font-light">
               Tu destino confiable para iPhones y accesorios
@@ -29,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
 
           {/* Redes sociales */}
-          <div className="flex gap-3">
+          <div className="flex gap-3 justify-center">
             <a
               href={whatsAppLink}
               target="_blank"

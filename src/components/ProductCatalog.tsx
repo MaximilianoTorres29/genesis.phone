@@ -30,7 +30,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
             Catálogo de iPhones
           </h2>
           <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-            Descubre nuestra selección de iPhones nuevos y usados. Todos con garantía y en excelente estado.
+            Descubre nuestra selección de iPhones nuevos y usados. Garantía oficial solo en equipos sellados. Todos en excelente estado.
           </p>
 
           {/* Filtros */}

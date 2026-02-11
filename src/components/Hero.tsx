@@ -82,7 +82,7 @@ export const Hero: React.FC<HeroProps> = ({ onWhatsAppClick }) => {
             <div className="text-center px-2">
               <div className="text-3xl sm:text-4xl mb-2 sm:mb-3">🔒</div>
               <h3 className="font-medium mb-1.5 sm:mb-2 text-gray-100 text-sm sm:text-base">Garantía</h3>
-              <p className="text-xs sm:text-sm text-gray-400 font-light">Productos con garantía oficial</p>
+              <p className="text-xs sm:text-sm text-gray-400 font-light">Garantía oficial solo en equipos sellados</p>
             </div>
             <div className="text-center px-2">
               <div className="text-3xl sm:text-4xl mb-2 sm:mb-3">⚡</div>
